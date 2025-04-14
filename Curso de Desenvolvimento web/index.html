@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da velha</title>
+    
+    <!-- link do arquivo CSS -->
+    <link rel="stylesheet" href="arquivos_CSS/inicio.css">
+    
+    <link rel="stylesheet" href="arquivos_CSS/style_geral.css">
+
+    <!-- Script do arquivo JS -->
+    <script src="arquivos_JS/index.js" defer></script>
+    <script src="arquivos_JS/inicio.js"></script>
+
+
+    <!-- script da font do texto do site -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">    <link href="https://fonts.googleapis.com/css2?family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"></head>
+
+    <!-- icones do site ionicon -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <!-- cabeçalho -->
+    <header class="cabecalho" >
+        <div class="logo">
+            <img src="https://cdn-icons-png.flaticon.com/512/7705/7705710.png" alt="imagem da logo">
+            <div class="txt">
+                <h1 class="logo_txt">Curso de Front-End</h1>
+            </div>
+        </div>
+        <div>
+            
+            <div class="btn_container">
+                
+                <button class="btn_open" id="btn_open"><ion-icon name="menu"></ion-icon></button>
+                <nav class="nav_btn" id="nav_btn">
+                    <button id="btn_close"><ion-icon name="close" ></ion-icon></button>
+                    <div>
+                        <img src="https://cdn-icons-png.flaticon.com/512/7705/7705710.png" alt="imagem da logo">
+                    </div>
+                    <ul>
+                        <li><a href="#"><ion-icon name="home"></ion-icon> Inicio</a></li>
+                        <li><a href="arquivos_HTML/jogo_velha.html"><spam style="font-weight: bold; font-size: 30px; padding: 0 5px;">#</spam> Jogo da velha</a></li>
+                        <li><a href="arquivos_HTML/jogo_memoria.html"><ion-icon name="albums"></ion-icon> Jogo da memória</a></li>
+                        <li><a href="arquivos_HTML/Jogo_do_n°secreto.html"><ion-icon name="keypad"></ion-icon> Jogo do n°secreto </a></li>
+                        
+                    </ul>
+                </nav>
+
+            </div>
+            
+        </div>
+        
+    </header>
+    <!-- container explicando sobre o curso -->
+    <main>
+        <section class="previa_curso">
+            <!-- imagem da instituição -->
+            <div class="img_index"> 
+                <h1>Curso de Front-End</h1>
+                <h2>Aprenda HTML, CSS e JavaScript criando games do zero</h2>
+            </div>
+            <!-- texto sobre o curso -->
+            <div class="txt_previa">
+                <h2>Como o curso ira funcionar:</h2>
+                <p>Nos dias de hoje, com a popularização das <b>IAs (inteligências artificiais)</b>, a programação pode parecer mais simples, especialmente quando essas ferramentas são utilizadas como apoio no processo de desenvolvimento. Muitos programadores experientes fazem uso da <b>IA para otimizar seu trabalho</b>, seja para automatizar tarefas repetitivas, revisar código ou até mesmo gerar soluções para problemas específicos.</p>
+
+                <p>No entanto, para quem está começando na área, o <b>uso desenfreado dessas ferramentas</b> pode criar uma <b>falsa sensação de aprendizado</b>. Ao resolver exercícios ou problemas de programação com a ajuda de IAs como o <b>Chat GPT</b>, alguns iniciantes acreditam que estão dominando os conceitos, quando, na verdade, estão apenas copiando respostas sem compreender a lógica por trás delas.</p>
+                
+                <p>Essa situação gera um efeito cascata: cada vez mais pessoas negligenciam os fundamentos da programação, o que resulta no desenvolvimento de softwares frágeis, mal estruturados e mais propensos a erros.</p>
+                
+                <p>Pensando nisso, em parceria com o <strong>IFRJ (Instituto Federal do Rio de Janeiro) Campus Engenheiro Paulo de Frontin</strong>, a organização <strong>Bit ninjas</strong>, elaborou um curso de desenvolvimento web, com <b>duração de 6 meses</b>, onde temos como objetivo abordar conceitos chaves, para que o aluno construam uma base de conhecimento sólida em programação. O curso será <b>dividido em quatro módulos</b>, cada um com foco em uma etapa importante do desenvolvimento web.</p>
+
+                <h2>Modulos do curso:</h2>
+                <ol class="modulos">
+                    <li><strong>Marcando com HTML ➔</strong> Introdução à linguagem de marcação responsável por estruturar o conteúdo das páginas web.</li>
+                    <li><strong>Estilizando com CSS ➔</strong> Aprendizado sobre como aplicar estilos visuais, cores, layouts e animações às páginas.</li>
+                    <li><strong>Programando com JavaScript ➔</strong> Exploração da linguagem de programação que dá interatividade e dinamismo aos sites.</li>
+                    <li><strong>Desenvolvendo Mini-Games Web ➔</strong> Aplicação prática dos conhecimentos adquiridos na criação de pequenos jogos interativos para navegador.</li>
+                </ol>
+                
+                <p>Com essa estrutura, o curso aborda as três principais linguagens da Web: <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong>. Oferecendo assim, uma base sólida para quem deseja iniciar na área de desenvolvimento front-end.</p>
+                
+                <p></p>
+                  
+                <h2>Como funcionarão as aulas:</h2>
+                <p>As aulas do curso serão realizadas <strong>presencialmente, no campus do IFRJ – Engenheiro Paulo de Frontin</strong>, no período da manhã.</p>
+                
+                <p>As aulas serão ministradas pelo professor <b>Leonardo S. Souza</b>.</p>
+
+                <p>Em caso de dúvidas, procure o docente <b>Roni Costa</b>.</p>
+            </div>
+
+
+            <div class="inst_colaborativas">
+
+            </div>
+             
+            <!-- textos sobre o curso -->
+            <div class="txt_previa">
+
+            </div>
+
+            <!-- botões de se increver no curso e baixar material -->
+            <div class="btn_curso">
+                <!-- botão para inscrever-se no curso -->
+                <a href="arquivos_HTML/forms.html" id="inscricao">Increva-se no curso</a>
+                <!-- botão para baixar material -->
+                <button onclick="acesso(true);" id="material">Baixar material do curso</button>
+            </div>
+
+            <!-- tela para colocar a chave de acesso que desbloqueara o material do curso -->
+
+            <div class="chave_acesso" id="janela_acesso">
+                <div class="close">
+                    <button onclick="acesso(false);" class="btn_close_acesso"><ion-icon name="close" ></ion-icon></button>
+                </div>
+                <div class="inputs">
+                    <div class="txt_acesso">
+                        <h3>Chave de acesso</h3>
+                        <p>Digite a chave de acesso adquirida durante a aula do curso!</p>
+                    </div>
+                    <div class="inp">
+                        <span id="negado">Chave de acesso negada!</span>
+                        <input type="text" id="chave" required>
+                        <input onclick="acessando();" class="acesso_btn" type="button" value="Acessar">
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- mapa sobre local do curso -->
+            <div class="localizacao">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1667.951941047804!2d-43.586933!3d-22.493158!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9938982b174647%3A0x3a5d47b90832e7bf!2sIFRJ%20-%20Instituto%20Federal%20de%20Educa%C3%A7%C3%A3o%2C%20Ci%C3%AAncia%20e%20Tecnologia%20do%20Rio%20de%20Janeiro%20(Campus%20Engenheiro%20Paulo%20de%20Frontin)!5e1!3m2!1spt-BR!2sbr!4v1742521300638!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe class="mapa_360" src="https://www.google.com/maps/embed?pb=!4v1742522153951!6m8!1m7!1sCAoSLEFGMVFpcE9DV0hMYVZtWVhXXzA3cmNPQi1lQmk5Z2FVbnNOSUExV2xYc29M!2m2!1d-22.492728115071397!2d-43.587042915034665!3f160!4f0!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </section>
+    </main>
+    <!-- rodapé do site com simbolo de copyrigth e nome do autor do codigo -->
+    <footer class="rodape">
+        <div class="inf_rodape">
+           
+            <div class="txt_rodape">
+                <h3>Professor do curso</h3>
+                <p>Leonardo S. Souza</p>
+            </div>
+
+            <div class="txt_rodape">
+                <h3>Organizador do curso</h3>
+                <p>Roni costa</p>
+            </div>
+            
+            <div class="txt_rodape">
+                <h3>Instituições colaboradoras</h3>
+                <p>IFRJ - CEPF</p>
+                <p>Bit Ninjas</p>
+            </div>
+            
+            <div class="imagens_rodape">
+                <img src="imagens/img_site/bit_ninjas.png" alt="Imagem da equipe Bit ninjas">
+                <img src="imagens/img_site/ifrj.png" alt="Imagem do IFRJ, Instituto federal do Rio de Janeiro" class="ifrj">
+            </div>
+            
+        </div>
+        <div class="cop">
+            
+            <p>©Copyrigth - Todos os direitos reservados</p> 
+            <p class="dev">Dev - Leonardo S. Souza</p>
+            
+        </div>
+
+    </footer>
+</body>
+</html>

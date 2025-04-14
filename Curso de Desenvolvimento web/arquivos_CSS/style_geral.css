@@ -1,0 +1,415 @@
+/*(INICIO) VARIAVEIS CSS */
+:root{
+    /* paleta de cor */
+    --color_0:#f4f4f4;
+    --color_1:#ffffff;
+    --color_2:#75a0ff;
+    --color_3:#f0af7d;
+    --color_3_1:#d59b6f;
+    --color_4:#2a2c2f;
+    --color_5:#313336;
+    --color_6:#38393c;
+    --color_7:#48494d;
+}
+/*(FIM) VARIAVEIS CSS */
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------- */
+
+/*(INICIO) RESET CSS */
+    *, *::before, *::after{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none; 
+        border: 0;
+    }
+
+    html, html::before, html::after{
+        font-size: 62.5%;
+        background-color: var(--color_0);
+    }
+
+    body, body::before, body::after{
+        font-size: 1.6rem; 
+        font-size: arial, sans-serif; /*define um fonte de texto padrão na pagina*/
+    }
+/*(FIM) RESET CSS */
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------- */
+
+/*(INICIO) Cabeçalho */
+
+    header.cabecalho{
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 30px;
+        align-items: center;
+        width: 100%;
+        background:var(--color_4);
+        flex-wrap: wrap;
+        gap: 20px;
+
+        & .logo{
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            
+            /* ------------------------------------------------- */
+            & h1{
+                font-size: 25px;
+                color: var(--color_1);
+                font-family: "Chakra Petch", sans-serif;
+                text-shadow: 0px 0px 5px #000;
+
+
+            }
+            & p{
+                font-size: 18px;
+                color: var(--color_1);
+            }
+            & img{
+                width: 80px;
+            }
+        }
+
+        
+        & h1{
+            font-size: 30px;
+            color: var(--color_4);
+            font-family: "Rowdies", serif;
+
+        }
+        & div{
+            
+            & .btn_container{
+                /* botão */
+
+                & button.btn_open{
+                    min-width: 40px;
+                    min-height: 40px;
+                    cursor: pointer;
+                    border-radius: 10px;
+                    border: none;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: ease-in-out .2s;
+                    background-color: var(--color_6);
+                    box-shadow: 0 0 5px var(--color_5);
+
+                    /* ---------------------------------------------------------------------------- */
+
+                    &:hover{
+                        transform: scale(1.07);
+                        background-color: var(--color_7);
+                    }
+
+
+                    
+                    & ion-icon{
+                        font-size: 26px;
+                        color: var(--color_1);
+
+
+                    }
+
+                   
+
+                }
+                
+                & nav{
+                    width: 300px;
+                    min-height: 100vh;
+                    position: fixed;
+                    right: -250%;
+                    bottom: 0;
+                    z-index: 2;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    gap: 60px;
+                    margin-top: 20vh;
+                    background-color: var(--color_5);
+                    transition: ease-in-out .4s;
+                    box-shadow: 0 0 5px var(--color_5);
+
+                    /* -------------------------------------------------------------------------------------- */
+                    & #btn_close{
+                        font-size: 30px;
+                        width: 40px;
+                        height: 40px;
+                        position: absolute;
+                        top: 8%;
+                        left: 20px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: var(--color_6);
+                        border: none;
+                        border-radius: 10px;
+                        cursor: pointer;
+                        color: var(--color_1);
+                        transition: ease-in-out .2s;
+                        box-shadow: 0 0 5px #2c2d2f;
+
+
+                        &:hover{
+                            transform: scale(1.07);
+                            background-color: var(--color_7);
+                            
+                        }
+
+
+                    }
+                    
+
+                    & div{
+                        width: 90px;
+                        height: 90px;
+                        & img{
+                            max-width: 100px;
+                            height: 100px;
+                        }
+                        
+                    }
+
+                    & ul{
+                        display: flex;
+                        justify-content: center;
+                        align-items: flex-start;
+                        flex-direction: column;
+                        position: relative;
+                        gap: 25px;
+                        list-style: none;
+                        padding: 0 50px;
+                        width: 100%;
+
+                        /* ------------------------------------------------------------------ */
+                        & li{
+                            display: flex;
+
+                            /* ------------------------------------------------------ */
+                            & a{
+                                display: flex;
+                                justify-content: flex-start;
+                                align-items: center;
+                                gap: 5px;
+                                width: 100%;
+                                height: 100%;
+                                font-size: 22px;
+                                padding: 7px 5px;
+                                border-radius: 8px;
+                                position: relative;
+                                color: var(--color_1);
+                                /* ----------------------------------------------------------------- */
+                                & ion-icon{
+                                    font-size: 27px;
+                                }
+                                &::before{
+
+                                    content: '';
+                                    position: absolute;
+                                    width: 0;
+                                    height: 3.5px;
+                                    background-color: var(--color_2);
+                                    bottom: 0;
+                                    transition: ease-in-out .25s;
+        
+                                   
+                                }
+                                &:hover{
+                                    color: var(--color_2);
+                                    /* ---------------------------------------------------------------------------------- */
+        
+                                    &::before{
+                                        width: 50%;
+        
+                                    }
+                                    
+        
+                                }
+                                
+                            }
+                        }
+
+                    }
+                }
+
+
+            }
+        }
+    }
+
+    /* mobile */
+    @media(max-width: 600px) {
+        header.cabecalho{
+            & div.txt{
+                display: none;
+            }
+
+            
+            & .nav_btn{
+                & ul{
+                    gap: 15px;
+                }
+            }
+            & div{
+                
+                & .nav_btn{
+                    & nav{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .nav_btn{
+            min-width: 100%;
+        }
+
+        #btn_close{
+            top: 20%;
+        }
+            
+        
+            
+    }
+        
+    
+
+/*(FIM) Cabeçalho */
+
+/* (INICIO) main */
+
+main{
+    margin: 25px;
+    /* --------------------------------------------------------- */
+
+    & section{
+        & div{
+            & h1.titulo_game{
+                font-size: 3em;
+                border-bottom:dashed 4px var(--color_5);
+                font-family: "Chakra Petch", sans-serif;
+                padding: 8px;
+                color: var(--color_3);
+                text-align: center;
+            }
+        }
+    }
+}
+
+/* (FIM) main */
+
+
+/* (INICIO)Rodapé */
+
+footer.rodape{
+    background-color: var(--color_6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    /* ----------------------------------------------------------------------------- */
+    & div.inf_rodape{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        padding: 30px 80px;
+        width: 100%;
+        max-width: 1500px;
+        min-height: 10vh;
+        background-color: var(--color_6);
+        
+        /* ------------------------------------------------------------ */
+        & div{
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            flex: 1 250px;
+            & h3{
+                color: var(--color_2);
+                font-size: 22px;
+                font-family: "Chakra Petch", sans-serif;
+
+
+            }
+            & p{
+                font-size: 18px;
+                color: var(--color_1);
+            }
+
+            
+
+        }
+        & div.imagens_rodape{
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+            max-height: 80px;
+            & img{
+                min-width: 80px;
+                max-width: 80px;
+                height: 100%;
+                border-radius: 15px;
+                padding: 10px;
+            }
+
+            
+            & img.ifrj{
+                min-width: 80px;
+                max-width: 80px;
+                width: 80px;
+                height: 100%;
+                max-height: 80px;
+                border-radius: 15px;
+            }
+        
+        }
+        
+    }
+
+    & div.cop{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        flex-wrap: wrap;
+        min-height: 4vh;
+        color: var(--color_1);
+        bottom: 0;
+        text-align: center;
+        font-size: 20px;
+        padding: 10px;
+        background-color: var(--color_4);
+
+            & p{
+                padding: 0 20px;
+                font-family: "Chakra Petch", sans-serif;
+
+                /* ----------------------------------------------------- */
+
+                &.dev{
+                    color: var(--color_3);
+                    font-weight: bold;
+                }
+
+            }
+            
+            
+        
+    }
+}
+
+/* (FIM)Rodapé */
+
+    

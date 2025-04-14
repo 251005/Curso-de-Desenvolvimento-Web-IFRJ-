@@ -1,0 +1,320 @@
+/*(INICIO) Estilizando pagina inicial */
+
+    main{
+        & section.previa_curso{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            /* -------------------------------------------------------------------------------------------- */
+
+            & div{
+                width: 100%;
+                max-width: 1100px;
+                display: flex;
+
+                & b,strong{
+                    color: var(--color_3_1);
+                }
+                
+                /* imagem do ifrj do topo da pagina */
+                &.img_index{
+                    width: 90%;
+                    margin-top:3vh ;
+                    border-radius: 20px;
+                    padding: 20px;
+                    height: 50vh;
+                    background: linear-gradient(to top,#2c2d2fe1, #2c2d2fbd), url('https://i2.wp.com/blog.ingrammicro.com.br/wp-content/uploads/2022/03/Na_Nov_02.jpg?resize=5000%2C3334&ssl=1');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: 50% 40%;
+                    flex-direction: column;
+                    color: var(--color_1);
+                    text-align: center;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 20px;
+
+
+
+                    /* ---------------------------------------------------------- */
+
+                    & h1{
+                        font-size: 35px;
+                        font-family: "Chakra Petch", sans-serif;
+                        text-shadow: 0px 0px 5px #000;
+
+
+                    }
+
+                    & h2{
+                        font-size: 25px;
+                        text-shadow: 0px 0px 5px #000;
+                        color: var(--color_2);
+
+                    }
+                }
+                /* texto que explica sobre o curso */
+                &.txt_previa{
+                    flex-direction: column;
+                    width: 90%;
+                    padding: 30px 0 10px 0;
+                    gap: 18px;
+                    justify-content: center;
+                    align-items: flex-start;
+                    /* --------------------------------------------------------------- */
+
+                    & p{
+                        color: var(--color_5);
+                        font-size: 20px;
+                    }
+                    & h2{
+                        color: var(--color_4);
+                        font-size: 35px;
+                    }
+
+                    & ol.modulos{
+                        display: flex;
+                        justify-content: center;
+                        align-items: flex-start;
+                        flex-direction: column;
+                        gap: 25px;
+                        list-style:upper-roman;
+                        list-style-position: inside;
+                        
+                        /* ------------------------------------------------------------- */
+
+                        & li{
+                            font-size: 20px;
+                            /* ---------------------------------------------------- */
+
+                            & strong{
+                                font-weight: bold;
+                            }
+                        }
+                    }
+
+
+                    & .img_previa{
+                        justify-content: center;
+                        
+                        /* ------------------------------------------------- */
+                        & img{
+                            min-width: 250px;
+                            width: 1000px;
+
+                        }
+                    }
+                }
+
+                &.btn_curso{
+                    
+                    flex-wrap: wrap;
+                    gap: 30px;
+                    padding: 35px;
+                    width: 100%;
+                    justify-content: center;
+                    align-items: center;
+                    /* ----------------------------------------------------- */
+                    & button, a{
+                        padding: 25px 55px;
+                        min-width: 200px;
+                        border-radius: 10px;
+                        font-size: 16px;
+                        background-color: var(--color_5);
+                        color: var(--color_1);
+                        font-weight: bold;
+                        font-family: "Chakra Petch", sans-serif;
+                        font-size: 18px;
+                        transition: ease-in-out .2s;
+                        cursor: pointer;
+                        box-shadow: 0 0px 5px var(--color_5);
+                        
+                        /* --------------------------------------------------------- */
+                        
+                        &:hover{
+                            transform: scale(1.05);
+                            background-color: var(--color_5);
+                            color: var(--color_2);
+                        }
+                        
+                    }
+
+                    
+                }
+
+                &.chave_acesso{
+                    position: fixed;
+                    top: 10%;
+                    border-radius: 20px;
+                    box-shadow: 0 0 5px var(--color_5);
+                    overflow: hidden;
+                    z-index: 1;
+                    width: 90%;
+                    height: 80vh;
+                    background-color: var(--color_4);
+                    justify-content: center;
+                    align-items: center;
+                    display: none;
+                    flex-direction: column;
+
+                    /* --------------------------------------------------------------------------------- */
+                    & div.close{
+                        position: absolute;
+                        top: 20px;
+                        left: 20px;
+
+                        & button{
+                            min-width: 40px;
+                            min-height: 40px;
+                            cursor: pointer;
+                            border-radius: 10px;
+                            border: none;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            transition: ease-in-out .2s;
+                            background-color: var(--color_6);
+                            box-shadow: 0 0 5px var(--color_5);
+
+                            /* ---------------------------------------------------------------------------- */
+
+                            &:hover{
+                                transform: scale(1.07);
+                                background-color: var(--color_7);
+                            }
+
+
+                            
+                            & ion-icon{
+                                font-size: 26px;
+                                color: var(--color_1);
+
+
+                            }
+                        }
+                    }
+                    
+                    & .inputs{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        gap: 20px;
+                        position: relative;
+
+                        
+                        & div.txt_acesso{
+                            font-size: 30px;
+                            font-family: "Chakra Petch", sans-serif;
+                            font-weight: bold;
+                            color: var(--color_1);
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex-direction: column;
+                            padding: 20px;
+                            text-align: center;
+                            /* ----------------------------------------------------------------------- */
+                            & h3{
+                                font-size: 30px;
+                            }
+                            & p{
+                                font-size: 20px;
+                                color: var(--color_3);
+                            }
+
+                        }
+
+                        & div.inp{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex-direction: column;
+                            position: relative;
+                            gap: 20px;
+
+                            /* ---------------------------------------------------------------- */
+                            & span{
+                                position: absolute;
+                                top: 0px;
+                                width: 250px;
+                                padding: 5px 5px 8px 5px;
+                                border-radius: 5px 5px 0 0;
+                                font-size: 16px;
+                                background-color:#ce2a64 ;
+                                color: var(--color_1);
+                                font-weight: bold;
+                                transition: ease-in-out .3s;
+
+                            }
+                            & input{
+                                min-width: 250px;
+                                padding: 12px;
+                                font-size: 16px;
+                                border-radius: 5px;
+
+                                &#chave{
+                                    position: relative;
+                                    
+                                }
+                            
+                                &.acesso_btn{
+                                    background-color: var(--color_2);
+                                    color: var(--color_5);
+                                    cursor: pointer;
+                                    transition: ease-in-out .2s;
+                                    font-weight: bold;
+                                    &:hover{
+                                        transform: scale(1.04);
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                /* mapa do ifrj */
+                &.localizacao{
+                    width: 90%;
+                    margin: 20px;
+                    border: var(--color_5) 4px solid;
+                    border-radius: 15px;
+                    overflow: hidden;
+                    box-shadow: 0 0px 5px var(--color_5);
+                    justify-content: center;
+                    align-items: center;
+
+                    
+                    & iframe{
+                        width: 100%;
+                        min-height: 60vh;
+
+                    }
+
+                }
+            }
+        }
+    }
+
+    @media (max-width: 900px){
+        .localizacao{
+            min-width: 95%;
+         
+            & iframe.mapa_360{
+                display: none;
+            }
+        }
+
+        .img_index{
+            min-width: 95%;
+        }
+
+        
+    }
+
+
+
+/*(FIM) Estilizando pagina inicial */
