@@ -71,8 +71,7 @@
                 display: flex;
                 width: 100%;
                 max-width: 500px;
-                min-height:5vh ;
-                height: 50px;
+                min-height:50px ;
                 display: flex;
                 justify-content: center;
                 align-items: center;
