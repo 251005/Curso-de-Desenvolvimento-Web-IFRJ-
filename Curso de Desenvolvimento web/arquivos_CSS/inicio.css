@@ -130,6 +130,7 @@
                         transition: ease-in-out .2s;
                         cursor: pointer;
                         box-shadow: 0 0px 5px var(--color_5);
+                        text-align: center;
                         
                         /* --------------------------------------------------------- */
                         
