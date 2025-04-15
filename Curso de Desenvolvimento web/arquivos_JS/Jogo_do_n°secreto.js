@@ -8,7 +8,7 @@ function jogo_n_secreto(){
     let vezes_jogadas = 1;
 
 
-    console.log(numero);
+
 
     // botão de chutar numero
     let btn_imput = document.getElementById('enviar_n_imput');
