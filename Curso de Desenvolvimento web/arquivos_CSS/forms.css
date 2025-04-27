@@ -6,7 +6,7 @@ main{
     align-items: center;
     & iframe{
         min-width: 100%;
-        min-height: 1250px;
+        min-height: 1550px;
         
     
     }

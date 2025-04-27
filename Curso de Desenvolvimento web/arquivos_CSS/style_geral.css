@@ -312,6 +312,8 @@ footer.rodape{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: var(--color_6);
+
 
     /* ----------------------------------------------------------------------------- */
     & div.inf_rodape{
