@@ -308,7 +308,6 @@ main{
 /* (INICIO)Rodapé */
 
 footer.rodape{
-    background-color: var(--color_6);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -318,13 +317,13 @@ footer.rodape{
     & div.inf_rodape{
         display: flex;
         justify-content: space-evenly;
-        align-items: center;
+        align-items: flex-start;
         flex-wrap: wrap;
         gap: 30px;
         padding: 30px 80px;
         width: 100%;
-        max-width: 1500px;
-        min-height: 10vh;
+        max-width: 1700px;
+        height: 100%;
         background-color: var(--color_6);
         
         /* ------------------------------------------------------------ */
@@ -333,7 +332,7 @@ footer.rodape{
             justify-content: center;
             align-items: flex-start;
             flex-direction: column;
-            flex: 1 250px;
+            flex: 1 270px;
             & h3{
                 color: var(--color_2);
                 font-size: 22px;
@@ -349,33 +348,39 @@ footer.rodape{
             
 
         }
-        & div.imagens_rodape{
-            display: flex;
-            justify-content: flex-start;
-            flex-direction: row;
-            align-items: center;
-            gap: 10px;
-            max-height: 80px;
-            & img{
-                min-width: 80px;
-                max-width: 80px;
-                height: 100%;
-                border-radius: 15px;
-                padding: 10px;
-            }
+        
+        
+    }
 
-            
-            & img.ifrj{
-                min-width: 80px;
-                max-width: 80px;
-                width: 80px;
-                height: 100%;
-                max-height: 80px;
-                border-radius: 15px;
-            }
-        
+    & div.imagens_rodape{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        background-color: var(--color_5);
+        gap: 10px;
+        width: 100%;
+        min-height: 80px;
+        & img{
+            min-width: 80px;
+            max-width: 80px;
+            min-height: 65px;
+            height: 100%;
+            border-radius: 15px;
+            padding: 10px;
         }
+
         
+        & img.ifrj{
+            min-width: 80px;
+            max-width: 80px;
+            width: 80px;
+            height: 100%;
+            max-height: 80px;
+            border-radius: 15px;
+        }
+    
     }
 
     & div.cop{
