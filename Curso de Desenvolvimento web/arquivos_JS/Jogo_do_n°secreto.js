@@ -2,16 +2,14 @@
 
   // número ramdomizado
   let numero = Math.floor(Math.random() * (1 + 101));
-
-    
+  
   // numero de vezes jogadas até acertar
   let vezes_jogadas = 1;
 
 function jogo_n_secreto(){
 
   
-    console.log(numero);
-    console.log(vezes_jogadas);
+
 
 
 
@@ -26,7 +24,6 @@ function jogo_n_secreto(){
         // numero adicionado no imput
         let numero_imput = document.getElementById('numero_imput');
 
-        console.log(numero_imput.value +' = '+numero);
         
         // container que da os parametros de jogo para o usuario (frase do numero ser maior ou menor )
         let parametro_game = document.getElementById('parametro_n_secreto');
@@ -78,7 +75,7 @@ let reiniciar = document.getElementById('reiniciar');
 
         // habilita o imput para preenchimento
         numero_imput.readOnly = false;
-        numero_imput = '';
+        numero_imput.value = '';
 
         // número ramdomizado
         numero = Math.floor(Math.random() * (1 + 101));
@@ -86,9 +83,8 @@ let reiniciar = document.getElementById('reiniciar');
         // numero de vezes jogadas até acertar
         vezes_jogadas = 1;
 
-        console.log(numero);
-        console.log(vezes_jogadas);
+ 
         
     });
 
-jogo_n_secreto(Math.floor(Math.random() * (1 + 101)), 1);
+jogo_n_secreto();
