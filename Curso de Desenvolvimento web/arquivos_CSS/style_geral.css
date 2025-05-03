@@ -382,6 +382,16 @@ footer.rodape{
             max-height: 80px;
             border-radius: 15px;
         }
+
+        & img.coex{
+            min-width: 110px;
+            max-width: 110px;
+            width: 110px;
+            height: 100%;
+            min-height: 80px;
+            max-height: 80px;
+            border-radius: 15px;
+        }
     
     }
 
